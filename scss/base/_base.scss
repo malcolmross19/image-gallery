@@ -1,0 +1,14 @@
+// Base Styles
+
+html {
+  background-color: $primary-color;
+  font-family: $font-stack;
+  font-size: 18px;
+  height: 100%;
+}
+
+body {
+  max-width: 1200px;
+  margin-top: 0;
+  @extend %center-element;
+}
