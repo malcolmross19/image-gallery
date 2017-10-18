@@ -1,0 +1,25 @@
+{
+  "name": "image_gallery.bitbucket.io",
+  "version": "1.0.0",
+  "description": "Responsive image gallery with animations and transitions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MJRoss@bitbucket.org/MJRoss/image_gallery.bitbucket.io.git"
+  },
+  "author": "Malcolm J. Ross",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/MJRoss/image_gallery.bitbucket.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
+    "gulp-postcss": "^7.0.0"
+  }
+}
