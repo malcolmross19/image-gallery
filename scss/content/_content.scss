@@ -1,0 +1,53 @@
+// Content Styles
+
+#banner {
+
+}
+
+#globe {
+  width: 100px;
+  height: 100px;
+  background: url('/images/globe.svg') no-repeat center;
+  @extend %center-element;
+}
+
+#quote {
+  text-align: center;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.overlay {
+  width: 100%;
+  height: 100px;
+  display: none;
+  position:absolute;
+  background-color:black;
+  opacity:0.75;
+  color: white;
+}
+
+.picture {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  float: left;
+  margin: 20px auto;
+  padding-left: 0.5em;
+  position: relative;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+
+  }
+
+  :hover .overlay {
+    display:inline-block;
+  }
+}

@@ -1,0 +1,15 @@
+// Layout styles
+
+#container {
+  display: block;
+  width: 1200px;
+  @extend %center-element;
+}
+
+footer {
+  display: block;
+  width: 1200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
