@@ -1,0 +1,64 @@
+#container, body, #globe {
+  margin-left: auto;
+  margin-right: auto; }
+
+#container {
+  display: block;
+  width: 1200px; }
+
+footer {
+  display: block;
+  width: 1200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+html {
+  background-color: white;
+  font-family: "Futura PT", Georgia, serif;
+  font-size: 18px;
+  height: 100%; }
+
+body {
+  max-width: 1200px;
+  margin-top: 0; }
+
+#globe {
+  width: 100px;
+  height: 100px;
+  background: url("/images/globe.svg") no-repeat center; }
+
+#quote {
+  text-align: center; }
+
+#gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.overlay {
+  width: 100%;
+  height: 100px;
+  display: none;
+  position: absolute;
+  background-color: black;
+  opacity: 0.75;
+  color: white; }
+
+.picture {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  float: left;
+  margin: 20px auto;
+  padding-left: 0.5em;
+  position: relative; }
+  .picture img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 250px; }
+  .picture :hover .overlay {
+    display: inline-block; }
