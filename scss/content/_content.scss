@@ -1,53 +1,153 @@
 // Content Styles
 
 #banner {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
 
+  h1 {
+    margin-top: 0;
+  }
 }
 
 #globe {
-  width: 100px;
-  height: 100px;
-  background: url('/images/globe.svg') no-repeat center;
+  width: 50px;
+  height: auto;
+  padding-top: 15px;
+  margin-bottom: 0;
   @extend %center-element;
+}
+
+.rotate {
+  animation: rotate 8s linear infinite;
+  transform-origin: 50% 50%;
 }
 
 #quote {
   text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+
+  @include responsive(small){
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #gallery {
   display: flex;
   flex-wrap: wrap;
+
+  @include responsive(small){
+    width: 100%;
+  }
+
+  @include responsive(medium){
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .overlay {
-  width: 100%;
-  height: 100px;
-  display: none;
+  width: 300px;
+  height: 80px;
+  flex-wrap: wrap;
   position:absolute;
   background-color:black;
-  opacity:0.75;
-  color: white;
+  opacity:0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  .user, .likes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 40px;
+
+    p {
+      display: inline-block;
+      margin: 10px 0 5px 5px;
+      color: white;
+    }
+
+    img {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+  }
+
+  @include responsive(large){
+    margin-right: 0;
+  }
 }
 
 .picture {
   display: inline-block;
   width: 300px;
-  height: auto;
+  height: 250px;
   float: left;
   margin: 20px auto;
   padding-left: 0.5em;
   position: relative;
+  overflow: hidden;
 
   img {
     display: block;
     margin: 0 auto;
     width: 300px;
     height: 250px;
-
   }
 
-  :hover .overlay {
-    display:inline-block;
+  &:hover .overlay {
+    background-color:black;
+    opacity: .85;
+    animation: slideIn .25s ease-in 1;
   }
+
+  @include responsive(xsmall){
+    width: 100%;
+    padding-left: 0;
+  }
+
+  @include responsive(small){
+    width: 100%;
+    padding-left: 0;
+  }
+
+  @include responsive(medium){
+    width: 50%;
+    height: 50%;
+  }
+
+  @include responsive(large){
+    width: 300px;
+    height: 250px;
+    padding-left: 0.5em;
+  }
+}
+
+#travelHeader {
+  margin-bottom: 10px;
+}
+
+#quote {
+  font-size: .75em;
+  margin-top: 0;
+}
+
+@keyframes slideIn {
+  0% {transform: translateY(25px);}
+  100% {transform: translateY(0);}
+}
+
+@keyframes rotate {
+  100% {transform: rotate(1turn);}
 }

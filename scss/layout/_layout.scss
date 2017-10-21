@@ -12,4 +12,14 @@ footer {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: $primary-color;
+  @extend %center-element;
+
+  @include responsive(small){
+    width: 100%;
+  }
+
+  @include responsive(xlarge){
+    width: 1200px;
+  }
 }

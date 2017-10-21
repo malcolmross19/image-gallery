@@ -1,14 +1,33 @@
 // Base Styles
 
-html {
-  background-color: $primary-color;
+body {
+  background-color: $neutral-color;
   font-family: $font-stack;
   font-size: 18px;
   height: 100%;
-}
-
-body {
-  max-width: 1200px;
   margin-top: 0;
   @extend %center-element;
+
+  @include responsive(small){
+    margin-bottom: 0;
+  }
+
+  @include responsive(xlarge){
+    margin-bottom: 0;
+  }
+}
+
+
+#container {
+  width: 1200px;
+  background-color: $primary-color;
+  top: 0;
+
+  @include responsive(small){
+    width: 100%;
+  }
+
+  @include responsive(large){
+    max-width: 1200px;
+  }
 }
