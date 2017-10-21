@@ -9,7 +9,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('scss', function() {
-    var processors = [
+    let processors = [
         autoprefixer({ browsers: ['last 2 versions']})
     ];
 
