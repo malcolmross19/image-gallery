@@ -36,4 +36,4 @@ These instructions will get you a copy of the project up and running on your loc
 * Malcolm Ross
 
 ### Link To Hosted Version ###
-* https://malcolmross19.github.io/image_gallery.bitbucket.io/
+* https://malcolmross19.github.io/image_gallery
